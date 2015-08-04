@@ -9,7 +9,9 @@ public class GuiExecute {
 	public static void main(String[] args) {
 		QuadrupletPuzzle puzzle = new QuadrupletPuzzle();
 		int[] intArray = GuiInput.getIntegerArrFromConsole();
-		List<String> output = puzzle.findQuadrupletIdx(intArray);
+		puzzle.setInputArray(intArray);
+
+		List<String> output = puzzle.findQuadrupletIdx(); 
 		if (output != null && !output.isEmpty()) {
 			System.out.println("Given array contains following Quadruplet of indexes :\n");
 			for (String temp : output) {

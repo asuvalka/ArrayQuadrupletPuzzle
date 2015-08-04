@@ -17,13 +17,15 @@ public class QuadrupletPuzzleTest {
 		QuadrupletPuzzle puzzle = new QuadrupletPuzzle();
 		
 		testArray = new int[] {3,4,7,0};
-		testOutput = puzzle.findQuadrupletIdx(testArray);
+		puzzle.setInputArray(testArray);
+		testOutput = puzzle.findQuadrupletIdx();
 		testExpected = new ArrayList<String>();
 		testExpected.add("(0,1,2,3)");
 		assertEquals(testExpected, testOutput);
 		
 		testArray = new int[] {3,4,7,1,2,9,8};
-		testOutput = puzzle.findQuadrupletIdx(testArray);
+		puzzle.setInputArray(testArray);
+		testOutput = puzzle.findQuadrupletIdx();
 		testExpected = new ArrayList<String>();
 		testExpected.add("(0,2,3,5)");
 		testExpected.add("(1,2,4,5)");
@@ -31,7 +33,8 @@ public class QuadrupletPuzzleTest {
 		assertEquals(testExpected, testOutput);
 		
 		testArray = new int[] {3,4};
-		testOutput = puzzle.findQuadrupletIdx(testArray);
+		puzzle.setInputArray(testArray);
+		testOutput = puzzle.findQuadrupletIdx();
 		testExpected = new ArrayList<String>();
 		assertEquals(testExpected, testOutput);
 	}

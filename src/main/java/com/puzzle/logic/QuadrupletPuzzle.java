@@ -6,8 +6,9 @@ import java.util.List;
 import java.util.Map;
 
 public class QuadrupletPuzzle {
+	private int[] inputArray;
 
-	public List<String> findQuadrupletIdx(int[] inputArray) {
+	public List<String> findQuadrupletIdx() {
 		Map<Integer, String> map = new HashMap<Integer, String>();
 		List<String> output = new ArrayList<String>();
 		for (int i = 0; i < inputArray.length - 3; i++) {
@@ -33,5 +34,13 @@ public class QuadrupletPuzzle {
 			}
 		}
 		return output;
+	}
+
+	public int[] getInputArray() {
+		return inputArray;
+	}
+
+	public void setInputArray(int[] inputArray) {
+		this.inputArray = inputArray;
 	}
 }
