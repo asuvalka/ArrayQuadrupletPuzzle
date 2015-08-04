@@ -5,23 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.puzzle.gui.GuiInput;
-
 public class QuadrupletPuzzle {
-
-	public static void main(String[] args) {
-		QuadrupletPuzzle puzzle = new QuadrupletPuzzle();
-		int[] intArray = GuiInput.getIntegerArrFromConsole();
-		List<String> output = puzzle.findQuadrupletIdx(intArray);
-		if (output != null && !output.isEmpty()) {
-			System.out.println("Given array contains following Quadruplet of indexes :\n");
-			for (String temp : output) {
-				System.out.println(temp);
-			}
-		} else {
-			System.out.println("No such Quadruplet exists in given array !!");			
-		}
-	}
 
 	public List<String> findQuadrupletIdx(int[] inputArray) {
 		Map<Integer, String> map = new HashMap<Integer, String>();
