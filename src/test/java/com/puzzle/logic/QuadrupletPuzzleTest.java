@@ -37,5 +37,11 @@ public class QuadrupletPuzzleTest {
 		testOutput = puzzle.findQuadrupletIdx();
 		testExpected = new ArrayList<String>();
 		assertEquals(testExpected, testOutput);
+		
+		testArray = null;
+		puzzle.setInputArray(testArray);
+		testOutput = puzzle.findQuadrupletIdx();
+		testExpected = null;
+		assertEquals(testExpected, testOutput);
 	}
 }

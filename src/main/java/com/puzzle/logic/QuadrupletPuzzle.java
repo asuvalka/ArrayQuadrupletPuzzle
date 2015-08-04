@@ -9,6 +9,8 @@ public class QuadrupletPuzzle {
 	private int[] inputArray;
 
 	public List<String> findQuadrupletIdx() {
+		if (this.getInputArray() == null) return null;
+
 		Map<Integer, String> map = new HashMap<Integer, String>();
 		List<String> output = new ArrayList<String>();
 		for (int i = 0; i < inputArray.length - 3; i++) {
