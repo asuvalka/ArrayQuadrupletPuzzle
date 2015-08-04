@@ -2,8 +2,18 @@ package com.puzzle.gui;
 
 import java.util.Scanner;
 
+/**
+ * This class is used to accept standard key board input.
+ * @author amitsuvalka
+ *
+ */
 public class GuiInput {
 
+	/**
+	 * Method to accept standard key board input.
+	 * It only takes the integer input and flushes out any other characters.
+	 * @return
+	 */
 	public static int[] getIntegerArrFromConsole() {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter length of source array : ");

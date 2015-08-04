@@ -5,9 +5,19 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * The class to determine whether an array of integers satisfy A + B = C + D, where A, B, C & D are integers values in the array.
+ * @author amitsuvalka
+ *
+ */
 public class QuadrupletPuzzle {
 	private int[] inputArray;
 
+	/**
+	 * Method to determine whether an array of integers satisfy A + B = C + D, where A, B, C & D are integers values in the array.
+	 * 
+	 * @return    List of Strings
+	 */
 	public List<String> findQuadrupletIdx() {
 		if (this.getInputArray() == null) return null;
 

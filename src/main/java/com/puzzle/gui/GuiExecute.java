@@ -4,6 +4,11 @@ import java.util.List;
 
 import com.puzzle.logic.QuadrupletPuzzle;
 
+/**
+ * This class can be used for sample testing for dynamic arrays.
+ * @author amitsuvalka
+ *
+ */
 public class GuiExecute {
 
 	public static void main(String[] args) {
